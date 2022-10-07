@@ -9,22 +9,17 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>pet-clinic</artifactId>
+    <artifactId>pet-clinic-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pet-clinic</name>
-    <description>pet-clinic</description>
+    <name>pet-clinic-web</name>
+    <description>pet-clinic-web</description>
     <properties>
         <java.version>17</java.version>
     </properties>
-    <scm>
-        <developerConnection>scm:git:https://github.com/PiDMA/comp3095-lab4-pet-clinic.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>
@@ -37,13 +32,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-release-plugin</artifactId>
-            <version>2.5.3</version>
-        </dependency>
-
     </dependencies>
 
     <build>
@@ -51,14 +39,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <goals>install</goals>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
-                </configuration>
             </plugin>
         </plugins>
     </build>
